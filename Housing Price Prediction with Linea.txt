@@ -1,0 +1,42 @@
+ Housing Price Prediction with Linear and Regularized Regression
+
+This project focuses on predicting housing prices using the Boston Housing Dataset. The objective was to explore multiple linear regression techniques, including Ridge and Lasso regression, to evaluate their effectiveness on this dataset.
+
+1. Dataset Description
+
+The dataset used is derived from the Boston Housing dataset, which includes 506 samples and 13 features such as:
+- CRIM: Crime rate by town
+- RM: Average number of rooms per dwelling
+- LSTAT: % lower status of the population
+- MEDV: Median value of owner-occupied homes (target variable)
+
+Missing values were present and handled during preprocessing.
+
+ Steps in the Project
+
+1.Data Preprocessing
+- Loaded the dataset and filled missing values using the mean of numeric columns.
+- Separated the features (`X`) and the target (`MEDV`).
+- Applied standard scaling to normalize the feature space.
+- Split the data into training and test sets (80/20 split).
+
+2.Modeling
+- Trained three regression models:
+  - Linear Regression
+  - Ridge Regression(L2 Regularization)
+  - Lasso Regression (L1 Regularization)
+- Evaluated each model using RMSE and R² scores across different regularization strengths (`alpha` values).
+- Chose the best-performing model based on lowest RMSE.
+
+3.Evaluation
+- Metrics used:
+  - Root Mean Squared Error (RMSE)
+  - Mean Absolute Error (MAE)
+  - R² Score
+- Final model performance:
+  - RMSE:5.0018
+  - MAE:3.1499
+  - R²: 0.6589
+
+
+
